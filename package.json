@@ -1,0 +1,26 @@
+{
+  "name": "grunt-cssnano-plus",
+  "version": "1.0.0",
+  "description": "A better cssnano grunt plugin for minifying CSS",
+  "license": "MIT",
+  "author": "Lee Yao <yaoli111144@gmail.com>",
+  "files": [
+    "tasks"
+  ],
+  "keywords": [
+    "gruntplugin",
+    "cssnano",
+    "css",
+    "minify",
+    "postcss"
+  ],
+  "homepage": "https://github.com/icecreamliker/grunt-cssnano-plus",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:icecreamliker/grunt-cssnano-plus.git"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cssnano": "^3.7.7"
+  }
+}
