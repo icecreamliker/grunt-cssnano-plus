@@ -29,6 +29,4 @@ module.exports = function(grunt) {
     Promise.all(processList).then(done);
 
   });
-
-  grunt.registerTask('cssnano-plus', ['cssnano']);
 };

@@ -11,28 +11,62 @@ $ npm install --save-dev grunt-cssnano-plus
 
 ## Advantages
 
-- Support verbose message output
 - Support directory dest
+- Support verbose message output
 
 ## Usage
 
-```js
-
+```
 grunt.initConfig({
-	cssnano: {
-		options: {
-			sourcemap: true
-		},
-		dist: {
-			files: {
-			    'dist/index.min.css': 'src/index.css',
-				'dist/app.min.css': 'src/app.css'
-			}
-		}
-	}
+  'cssnano': {
+    options: {
+      sourcemap: true
+    },
+    dist: {
+      files: {
+        'path/dist/index.min.css': 'path/src/index.css',
+        'path/dist/app.min.css': 'path/src/app.css'
+      }
+    }
+  }
 });
-
-grunt.registerTask('default', ['cssnano']);
+```
+Or compile all the CSS files into a specific directory:
+```
+grunt.initConfig({
+  'cssnano': {
+    options: {
+      sourcemap: true
+    },
+    dist: {
+      files: [{
+          src: 'path/src/*.css',
+          dest: 'path/dist/'
+      }]
+    }
+  }
+});
+```
+Or customize multi-tasks:
+grunt.initConfig({
+  'cssnano': {
+    options: {
+      sourcemap: true
+    },
+    subtask1: {
+      files: [{
+          src: 'path/src/*.css',
+          dest: 'path/dist/'
+      }]
+    },
+    subtask2: {
+      files: {
+        'dist/index.min.css': 'src/index.css',
+        'dist/app.min.css': 'src/app.css'
+      }
+    }
+  }
+});
 ```
 
 
