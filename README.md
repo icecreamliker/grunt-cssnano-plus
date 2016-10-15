@@ -20,7 +20,7 @@ $ npm install --save-dev grunt-cssnano-plus
 
 ```
 grunt.initConfig({
-  'cssnano': {
+  cssnano: {
     options: {
       sourcemap: true
     },
@@ -36,7 +36,7 @@ grunt.initConfig({
 Or compile all the CSS files into a specific directory:
 ```
 grunt.initConfig({
-  'cssnano': {
+  cssnano: {
     options: {
       sourcemap: true
     },
@@ -52,7 +52,7 @@ grunt.initConfig({
 Or customize multi-tasks:
 ```
 grunt.initConfig({
-  'cssnano': {
+  cssnano: {
     options: {
       sourcemap: true
     },
@@ -64,8 +64,8 @@ grunt.initConfig({
     },
     subtask2: {
       files: {
-        'dist/index.min.css': 'src/index.css',
-        'dist/app.min.css': 'src/app.css'
+        'path/dist/index.min.css': 'path/src/index.css',
+        'path/dist/app.min.css': 'path/src/app.css'
       }
     }
   }
