@@ -9,10 +9,12 @@
 $ npm install --save-dev grunt-cssnano-plus
 ```
 
+
 ## Advantages
 
 - Support directory dest
 - Support verbose message output
+
 
 ## Usage
 
@@ -48,6 +50,7 @@ grunt.initConfig({
 });
 ```
 Or customize multi-tasks:
+```
 grunt.initConfig({
   'cssnano': {
     options: {
